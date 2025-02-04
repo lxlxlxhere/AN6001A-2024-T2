@@ -22,35 +22,12 @@
         
         <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
         <script>
-            const contractAddress = "0x53aB9c9f364cFCd0a6d80F642aeF3c8964165B88";
+            const contractAddress = "0x9332b92b529af36498121a5e43305ecf8c5e2f45";
             const contractABI = [
                 {
                     "inputs": [],
                     "stateMutability": "nonpayable",
                     "type": "constructor"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "address",
-                            "name": "payer_add",
-                            "type": "address"
-                        },
-                        {
-                            "internalType": "address",
-                            "name": "payee_add",
-                            "type": "address"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "pay_amount",
-                            "type": "uint256"
-                        }
-                    ],
-                    "name": "weixin",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
                 },
                 {
                     "inputs": [],
@@ -73,6 +50,29 @@
                         }
                     ],
                     "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "payer_add",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "payee_add",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "pay_amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "name": "weixin",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
                     "type": "function"
                 }
             ];
